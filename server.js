@@ -27,6 +27,10 @@ mongoose.connect(dbConfig.url, {
 });
 
 
+// Routes
+require('./app/routes/service.routes')(router);
+
+
 app.listen(port, () => {
     console.log(`Servidor executando na porta ${port}`);
 });
